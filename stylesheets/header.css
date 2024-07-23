@@ -1,0 +1,15 @@
+header ul.nav-bar {
+    list-style-type: none;
+    display: flex;
+    gap: 3em;
+    justify-content: center;
+    margin: 1.5em 0;
+    padding: 0px;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+ul.nav-bar li {
+    font-weight: 700;
+}

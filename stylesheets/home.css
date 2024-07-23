@@ -1,0 +1,74 @@
+.scroll-snap {
+    scroll-snap-type: y mandatory;
+}
+
+.content {
+    scroll-snap-align: start;
+    scroll-padding: 4em;
+    overflow:scroll;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+}
+
+.hero-greeting {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.hero-greeting h1 {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    text-align: left;
+}
+
+.hero-greeting h2 {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: left;
+}
+
+.hero-image img {
+    max-width: 15em;
+    height: auto;
+}
+
+.dog-pics {
+    display: flex;
+    gap: 0;
+}
+
+.dog-pics img {
+    max-width: 15em;
+    height: auto;
+}
+
+.dog-pics .maggie {
+    position: relative;
+}
+
+.dog-pics .willow {
+    position: relative;
+    top: 14em;
+    left: 14em;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    max-width: 650px;
+}
+
+.about-me p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+span.bold {
+    font-weight: 600;
+}
