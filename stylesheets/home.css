@@ -1,11 +1,14 @@
 .content {
     display: flex;
-    height: fit-content;
+    height: 100%;
     align-items: center;
     justify-content: center;
     gap: 2em;
-    padding: 1em;
+    padding: 1.2em;
+    margin: 3em 0;
 }
+
+.hero-
 
 .hero-greeting {
     display: flex;
@@ -27,40 +30,87 @@
     text-align: left;
 }
 
-.hero-image img {
+.content img {
     max-width: 15em;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.25));
     height: auto;
 }
 
 .dog-pics {
     display: flex;
-    gap: 0;
+    width: fit-content;
+    gap: 1em;
 }
 
-@media screen and (max-width: 1000px) {
-    /* .dog-pics {
-        flex-direction: column;
+/* @media screen and (max-width: 1230px) {
+    .dog-pics {
+        gap: 0;
     }
-
     .dog-pics img.maggie {
-        transform: translate(0, 50%);
+        transform: translate(0, -40%);
     }
     .dog-pics img.willow {
-        transform: translate(0, -20%);
+        transform: translate(0, 40%);
+        margin-left: -20%;
+    }
+} */
+
+@media screen and (max-width: 1000px) {
+    .dog-pics {
+        flex-direction: column;
+        gap: 1em;
+    }
+    /* .dog-pics img.maggie {
+        transform: translate(0, 0);
+        margin-left: 0;
+    }
+    .dog-pics img.willow {
+        transform: translate(0,0);
+        margin-left: 0;
     } */
 }
 
+@media screen and (max-width: 670px) {
+    .dog-pics {
+        flex-direction: row;
+        gap: 1em;
+    }
+
+    .dog-pics img.maggie,
+    .dog-pics img.willow {
+        width: 50%;
+    }
+
+    .content > img {
+        width: 50%
+    }
+    
+    .content {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .hero-greeting {
+        justify-content: center;
+    }
+    
+    .hero-greeting h1,
+    .hero-greeting h2 {
+        text-align: center;
+    }
+
+    .about-me {
+        text-align: justify;
+    }
+
+}
+
 .dog-pics img.maggie {
-    transform: translate(0, -20%);
+    align-self: start;
 }
 
 .dog-pics img.willow {
-    transform: translate(0, 20%);
-}
-
-.dog-pics img {
-    width: 15em;
-    height: auto;
+    align-self: end;
 }
 
 .about-me {
@@ -77,4 +127,8 @@
 
 span.bold {
     font-weight: 600;
+}
+
+span.light {
+    font-weight: 200;
 }
