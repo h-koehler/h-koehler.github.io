@@ -8,24 +8,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<header>
-    <ul class="nav-bar">
-        <li>home</li>
-        <li>about</li>
-        <li>projects</li>
-        <li>contact</li>
-    </ul>
-</header>
-
 <body>
-    <div class="content">
+    <header>
+        <script src="scripts/scroll.js"></script>
+        <ul class="nav-bar">
+            <li>home</li>
+            <li>about</li>
+            <li>projects</li>
+            <li>contact</li>
+        </ul>
+    </header>
+    <div class="content" id="first">
             <img src="images/headshot.png">
         <div class="hero-greeting">
             <h1>Hi, I'm Hannah!</h1>
             <h2>Software Engineer</h2>
         </div>
     </div>
-    <div class="content">
+    <div class="content" id="second">
         <div class="about-me">
             <p>
                 I am a software engineer who is passionate about creating <span class="bold">well organized</span>,
@@ -46,6 +46,28 @@
         <div class="dog-pics">
             <img class="maggie" src="images/maggie.png">
             <img class="willow" src="images/willow.png">
+        </div>
+    </div>
+    <script src="scripts/carousel.js"></script>
+    <div class="content" id="third">
+        <div class="carousel-wrapper">
+            <button type="button" class="arrows left-arrows arrow-inactive" aria-label="Arrow Left">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <section class="carousel">
+                <div class="carousel-item">
+                    <img src="1.jpg" alt="Working">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="2.jpg" alt="Working">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="3.jpg" alt="Working">
+                  </div>
+            </section>
+            <button type="button" class="arrows right-arrow" aria-label="Arrow Right">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
         </div>
     </div>
 </body>

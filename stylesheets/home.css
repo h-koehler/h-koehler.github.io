@@ -8,8 +8,6 @@
     margin: 3em 0;
 }
 
-.hero-
-
 .hero-greeting {
     display: flex;
     flex-direction: column;
@@ -60,14 +58,6 @@
         flex-direction: column;
         gap: 1em;
     }
-    /* .dog-pics img.maggie {
-        transform: translate(0, 0);
-        margin-left: 0;
-    }
-    .dog-pics img.willow {
-        transform: translate(0,0);
-        margin-left: 0;
-    } */
 }
 
 @media screen and (max-width: 670px) {
@@ -76,15 +66,15 @@
         gap: 1em;
     }
 
-    .dog-pics img.maggie,
-    .dog-pics img.willow {
+    .dog-pics img#maggie,
+    .dog-pics img#willow {
         width: 50%;
     }
 
-    .content > img {
+    .content>img {
         width: 50%
     }
-    
+
     .content {
         flex-direction: column;
         gap: 1em;
@@ -93,29 +83,17 @@
     .hero-greeting {
         justify-content: center;
     }
-    
+
     .hero-greeting h1,
     .hero-greeting h2 {
         text-align: center;
     }
-
-    .about-me {
-        text-align: justify;
-    }
-
-}
-
-.dog-pics img.maggie {
-    align-self: start;
-}
-
-.dog-pics img.willow {
-    align-self: end;
 }
 
 .about-me {
     display: flex;
     flex-direction: column;
+    text-align: justify;
     gap: 1em;
     max-width: 650px;
 }
