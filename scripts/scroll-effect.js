@@ -1,19 +1,13 @@
-// const { default: scrollIntoView } = await import(
-//     'https://esm.sh/scroll-into-view-if-needed'
-// )
+const { default: scrollIntoView } = await import(
+    'https://esm.sh/scroll-into-view-if-needed'
+  )
 
-// document.getElementById('about').scrollIntoView();
-
-function scrollFunction(elementId) {
-    document.getElementById(elementId).scrollIntoView();
-}
-
-// onscroll = (event) => {
-//     let scroll = this.scrollY;
-//     const section = document.getElementById('.about');
-//     if (scroll > 10) {;
-//         section.scrollIntoView({
-//             behavior: "smooth",
-//         })
-//     }
-// }
+window.addEventListener("scroll", (event) => {
+    let scroll = this.scrollY;
+    const sections = document.querySelectorAll('.anchor');
+    if (scroll > 10) {
+    const node = sections[step];
+    node.scrollIntoView({
+        behavior: "smooth",
+    })
+})
