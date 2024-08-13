@@ -36,8 +36,12 @@
 
 .dog-pics {
     display: flex;
-    width: fit-content;
+    max-width: 650px;
     gap: 1em;
+}
+
+.dog-pics img {
+    min-width: 0;
 }
 
 /* @media screen and (max-width: 1230px) {
@@ -56,6 +60,7 @@
 @media screen and (max-width: 1000px) {
     .dog-pics {
         flex-direction: column;
+        /* max-width:fit-content; */
         gap: 1em;
     }
 }
@@ -64,6 +69,7 @@
     .dog-pics {
         flex-direction: row;
         gap: 1em;
+        max-width: 100%;
     }
 
     .dog-pics img#maggie,
